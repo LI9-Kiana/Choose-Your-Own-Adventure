@@ -77,6 +77,7 @@ def generate_story_task(job_id:str,theme:str,session_id:str):
             job.error = str(e)
             db.commit()
     finally:
+        
         db.close()
 
 @router.get("/{story_id}/complete", response_model=CompleteStoryResponse)
