@@ -21,6 +21,8 @@ class CompleteStoryNodeResponse(StoryNodeBase):
     class Config:
         from_attributes = True
 
+class CreateStoryRequest(BaseModel):
+    theme: str
 
 class StoryBase(BaseModel):
     title: str
@@ -28,10 +30,6 @@ class StoryBase(BaseModel):
 
     class Config:
         from_attributes = True
-
-
-class CreateStoryRequest(BaseModel):
-    theme: str
 
 
 class CompleteStoryResponse(StoryBase):
