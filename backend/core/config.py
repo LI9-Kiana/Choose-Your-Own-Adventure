@@ -3,6 +3,7 @@ from pydantic_settings import BaseSettings
 from pydantic import field_validator
 import os
 
+
 class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     DEBUG: bool = False
