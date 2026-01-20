@@ -54,6 +54,8 @@ Choose_Your_Own_Adventure/
 │
 └── README.md
 
+---
+
 ## 🚀 Future Improvements
 
 - User accounts and saved stories
